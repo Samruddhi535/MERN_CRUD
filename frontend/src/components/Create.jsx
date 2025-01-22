@@ -15,7 +15,7 @@ const Create = () => {
         try{
             e.preventDefault();
         const addUser = { name, email, age }
-        const response = await fetch("http://localhost:5000", {
+        const response = await fetch("https://mern-crud-pzis.vercel.app", {
             method: "POST",
             body: JSON.stringify(addUser),
             headers: {
