@@ -7,7 +7,7 @@ const Read = () => {
   const [error, setError] = useState("");
 
   async function getData() {
-    const response = await fetch("https://mern-crud-khaki.vercel.app");
+    const response = await fetch("https://mern-crud-khaki.vercel.app/");
     const result = await response.json();
     if (!response.ok) {
       console.log(result.error);
