@@ -10,7 +10,7 @@ const Create = () => {
     const [error, setError] = useState("");
     const navigate = useNavigate();
     console.log(name, email, age);
-
+    //axios.defaults.withCredentials=true;
     const handleSubmit = async (e) => {
         try{
             e.preventDefault();

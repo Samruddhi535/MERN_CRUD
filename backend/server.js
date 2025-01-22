@@ -9,6 +9,14 @@ const userRoute = require("./routes/userRoute");
 
 app.use(express.json());
 
+app.use(cors(
+    {
+        origin:[],
+        methods:["POST","GET"],
+        credentials:true
+    }
+));
+
 mongoose.connect(process.env.URI).
 then(()=>{
     console.log("connected successfully");
